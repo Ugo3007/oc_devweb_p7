@@ -5,13 +5,20 @@ import './index.css';
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
 import MainLayout from "./views/MainLayout";
 import ErrorPage from "./views/ErrorPage";
+import Homepage from "./views/Homepage";
 
 
 const router = createBrowserRouter([
     {
         path: '/',
         element: <MainLayout/>,
-        errorElement: <ErrorPage/>
+        errorElement: <ErrorPage/>,
+        children: [
+            {
+                index: true,
+                element: <Homepage/>
+            }
+        ]
     }
 ])
 
