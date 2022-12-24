@@ -6,6 +6,7 @@ import {createBrowserRouter, RouterProvider} from "react-router-dom";
 import MainLayout from "./views/MainLayout";
 import ErrorPage from "./views/ErrorPage";
 import Homepage from "./views/Homepage";
+import About from "./views/About";
 
 
 const router = createBrowserRouter([
@@ -17,6 +18,10 @@ const router = createBrowserRouter([
             {
                 index: true,
                 element: <Homepage/>
+            },
+            {
+                path: '/a-propos',
+                element: <About/>
             }
         ]
     }
