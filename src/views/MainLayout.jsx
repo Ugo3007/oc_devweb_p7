@@ -1,9 +1,10 @@
 import {Outlet} from "react-router-dom";
+import Footer from "../components/Footer";
 
 export default function MainLayout () {
     return <main>
         <h1>Hello World! (Main Layout)</h1>
         <Outlet/>
-        <h2>This is the footer</h2>
+        <Footer/>
     </main>
 }
