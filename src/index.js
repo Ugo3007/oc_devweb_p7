@@ -7,6 +7,7 @@ import MainLayout from "./views/MainLayout";
 import ErrorPage from "./views/ErrorPage";
 import Homepage from "./views/Homepage";
 import About from "./views/About";
+import HousingDetails from "./views/HousingDetails";
 
 
 const router = createBrowserRouter([
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
             {
                 path: '/a-propos',
                 element: <About/>
+            },
+            {
+                path: '/logement/:id',
+                element: <HousingDetails/>
             }
         ]
     }
