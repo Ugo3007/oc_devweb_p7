@@ -1,3 +1,26 @@
 .main-header {
-
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 100px;
+    color: #FF6060;
 }
+
+.main-header > img {
+    width: 210px;
+    /* Width mobile device : 145px */
+}
+
+.main-header > nav > ul {
+    display: flex;
+    list-style: none;
+}
+
+.main-header > nav > ul > li {
+    margin-left: 57px;
+    /*
+        Margin-left mobile device : 10px
+        Majuscules
+    */
+    font-size: 24px;
+}
+
