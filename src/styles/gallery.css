@@ -1,0 +1,7 @@
+.gallery-container {
+    background-color: #F7F7F7;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 50px 0;
+}

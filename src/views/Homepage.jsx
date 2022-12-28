@@ -1,12 +1,12 @@
 import Banner from "../components/Banner";
 import '../styles/homepage.css'
-import Card from "../components/Card";
+import Gallery from "../components/Gallery";
 
 export default function Homepage () {
     return (
         <div className="homepage">
             <Banner/>
-            <Card/>
+            <Gallery/>
         </div>
     )
 }
