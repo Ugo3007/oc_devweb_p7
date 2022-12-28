@@ -1,7 +1,10 @@
 import Banner from "../components/Banner";
+import '../styles/homepage.css'
 
 export default function Homepage () {
     return (
-        <Banner/>
+        <div className="homepage">
+            <Banner/>
+        </div>
     )
 }
