@@ -1,3 +1,12 @@
 .housing-details-container {
     border: 1px solid black;
 }
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.housing-details-container h2, p {
+    color: #FF6060;
+}
