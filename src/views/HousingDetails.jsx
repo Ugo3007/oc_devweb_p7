@@ -1,6 +1,7 @@
 import '../styles/housing_details.css'
 import Contact from "../components/Housing/Contact";
 import Tag from "../components/Housing/Tag";
+import Rating from "../components/Housing/Rating";
 
 const data = require('../datas/logements.json')
 export default function HousingDetails () {
@@ -22,7 +23,7 @@ export default function HousingDetails () {
                     <Tag tagname={data[0].tags[1]}/>
                 </section>
                 <section className="column">
-                    {/* TODO: Notation */}
+                    <Rating numberOfStars={data[0].rating}/>
                 </section>
             </div>
             <div className="row">
