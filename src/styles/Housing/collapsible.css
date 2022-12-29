@@ -1,0 +1,36 @@
+.collapsible-container {
+    width: 580px;
+}
+
+.collapsible {
+    width: 100%;
+    height: 50px;
+    background-color: #FF6060;
+    border-radius: 10px;
+    border: 0;
+    color: white;
+    line-height: 26px;
+    font-size: 18px;
+    outline: none;
+    cursor: pointer;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.active, .collapsible:hover {
+    background-color: #ff3c3c;
+}
+
+.notDisplayed {
+    padding: 0 18px;
+    overflow: hidden;
+    background-color: #f1f1f1;
+    display: none;
+}
+
+.blockDisplayed {
+    padding: 0 18px;
+    overflow: hidden;
+    background-color: #f1f1f1;
+    display: block;
+}
