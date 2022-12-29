@@ -1,5 +1,6 @@
 import '../styles/housing_details.css'
 import Contact from "../components/Housing/Contact";
+import Tag from "../components/Housing/Tag";
 
 const data = require('../datas/logements.json')
 export default function HousingDetails () {
@@ -16,9 +17,9 @@ export default function HousingDetails () {
                 </section>
             </div>
             <div className="row">
-                <section className="column">
-                    <h2>Coucou</h2>
-                    {/* TODO: Tag list */}
+                <section className="column-row">
+                    <Tag tagname={data[0].tags[0]}/>
+                    <Tag tagname={data[0].tags[1]}/>
                 </section>
                 <section className="column">
                     {/* TODO: Notation */}

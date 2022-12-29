@@ -17,3 +17,9 @@
 .row:first-of-type {
     border: 1px solid black;
 }
+
+.column-row {
+    margin-top: 20px;
+    display: flex;
+    column-gap: 10px;
+}
