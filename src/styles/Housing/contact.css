@@ -1,0 +1,7 @@
+.contact {
+    display: flex;
+}
+
+.contact > p {
+    width: 90px;
+}
