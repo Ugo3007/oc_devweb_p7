@@ -2,7 +2,6 @@ import '../styles/gallery.css'
 import Card from "./Card";
 
 const data = require('../datas/logements.json')
-console.log(data)
 
 export default function Gallery () {
     // TODO: RenderCard Function
@@ -18,7 +17,6 @@ export default function Gallery () {
             {
                 data.forEach((value) => {
                     renderCard(value.title, value.cover, value.description)
-                    console.log('Coucou cest nous')
                 })
             }
             <Card title={data[0].title} src={data[0].cover} description={data[0].description}/>
