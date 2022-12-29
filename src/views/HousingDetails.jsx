@@ -2,19 +2,21 @@ import '../styles/housing_details.css'
 import Contact from "../components/Housing/Contact";
 import Tag from "../components/Housing/Tag";
 import Rating from "../components/Housing/Rating";
+import Collapsible from "../components/Housing/Collapsible";
+
 
 const data = require('../datas/logements.json')
 export default function HousingDetails () {
     return (
         <div className="housing-details-container">
-            {/* TODO: Carousel */}
+            <img src={data[0].cover} alt="bonjour" className='placeholder'/>
             <div className="row">
                 <section className="column">
                     <h2>{data[0].title}</h2>
                     <p>{data[0].location}</p>
                 </section>
                 <section className="column">
-                    <Contact src={data[0].cover} hostname={data[0].host.name}/>
+                    <Contact src={data[0].host.picture} hostname={data[0].host.name}/>
                 </section>
             </div>
             <div className="row">
@@ -27,8 +29,8 @@ export default function HousingDetails () {
                 </section>
             </div>
             <div className="row">
-                {/* TODO: Burger 1 = Description */}
-                {/* TODO: Burger 2 = Equipements */}
+                <Collapsible collapsibleTitle="Description" collapsibleContent={data[0].description}/>
+                <Collapsible collapsibleTitle="Équipements" collapsibleContent={data[0].equipments}/>
             </div>
         </div>
     )

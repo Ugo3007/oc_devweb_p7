@@ -1,7 +1,13 @@
 .housing-details-container {
-    border: 1px solid black;
     max-width: 1240px;
     margin: 0 auto;
+}
+
+.placeholder {
+    width: 1240px;
+    height: 415px;
+    object-fit: cover;
+    border-radius: 25px;
 }
 
 .row {
@@ -14,8 +20,9 @@
     color: #FF6060;
 }
 
-.row:first-of-type {
-    border: 1px solid black;
+.row:last-of-type {
+    margin-top: 25px;
+    align-items: flex-start;
 }
 
 .column-row {
