@@ -1,12 +1,19 @@
 .housing-details-container {
     border: 1px solid black;
+    max-width: 1240px;
+    margin: 0 auto;
 }
 
 .row {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .housing-details-container h2, p {
     color: #FF6060;
+}
+
+.row:first-of-type {
+    border: 1px solid black;
 }
