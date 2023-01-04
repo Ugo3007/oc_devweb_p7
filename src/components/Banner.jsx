@@ -1,12 +1,14 @@
 import '../styles/banner.css'
-import banner_image from '../assets/banner.png'
 
-export default function Banner () {
+export default function Banner ({
+                                    img_src,
+                                    divText
+                                }) {
     return (
         <div className="banner">
-            <img src={banner_image}
+            <img src={img_src}
                  alt="La bannière, on peut y voir des montagnes et des affleurements rocheux de près et quelques arbres"/>
-            <div>Chez vous, partout et ailleurs</div>
+            <div>{divText}</div>
         </div>
     )
 }

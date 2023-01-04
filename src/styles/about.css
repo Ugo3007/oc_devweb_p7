@@ -6,7 +6,7 @@
     align-items: center;
 }
 
-.about-container > .collapsible-container {
+.about-container > div > .collapsible-container {
     margin: 20px;
     width: 1240px;
 }
