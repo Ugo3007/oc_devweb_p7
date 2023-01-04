@@ -15,12 +15,21 @@
     list-style: none;
 }
 
-.main-header > nav > ul > li {
+.link {
     margin-left: 57px;
-    /*
-        Margin-left mobile device : 10px
-        Majuscules
-    */
     font-size: 24px;
+    color: #FF6060;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.link:hover {
+    color: #FF6060;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.link:active {
+    text-decoration: underline;
 }
 

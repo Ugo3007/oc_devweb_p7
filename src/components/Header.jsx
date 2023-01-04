@@ -1,5 +1,6 @@
 import '../styles/header.css'
 import logo from '../assets/logo_header.png'
+import {Link} from "react-router-dom";
 
 export default function Header () {
     return (
@@ -7,12 +8,8 @@ export default function Header () {
             <img src={logo} alt="Logo du header de Kasa, écrit en rouge avec à la place du premier A une maison."/>
             <nav>
                 <ul>
-                    {/* TODO : React Router Link*/}
-                    <li>
-                        Accueil
-                    </li>
-                    {/* TODO : React Router Link*/}
-                    <li>À propos</li>
+                    <li><Link className='link' to='/'>Accueil</Link></li>
+                    <li><Link className='link' to='/a-propos'>A propos</Link></li>
                 </ul>
             </nav>
         </header>
