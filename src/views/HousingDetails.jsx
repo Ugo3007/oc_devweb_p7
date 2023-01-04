@@ -10,7 +10,7 @@ const data = require('../datas/logements.json')
 export default function HousingDetails () {
     return (
         <div className="housing-details-container">
-            <Carousel/>
+            <Carousel img={data[0].pictures}/>
             <div className="row">
                 <section className="column">
                     <h2>{data[0].title}</h2>
