@@ -3,13 +3,14 @@ import Contact from "../components/Housing/Contact";
 import Tag from "../components/Housing/Tag";
 import Rating from "../components/Housing/Rating";
 import Collapsible from "../components/Housing/Collapsible";
+import Carousel from "../components/Carousel";
 
 
 const data = require('../datas/logements.json')
 export default function HousingDetails () {
     return (
         <div className="housing-details-container">
-            <img src={data[0].cover} alt="bonjour" className='placeholder'/>
+            <Carousel/>
             <div className="row">
                 <section className="column">
                     <h2>{data[0].title}</h2>
