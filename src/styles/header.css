@@ -64,7 +64,7 @@
     .main-header {
         max-width: 335px;
         max-height: 47px;
-        margin: 20px;
+        margin: 20px 20px 0 20px;
         padding: 0;
     }
 
