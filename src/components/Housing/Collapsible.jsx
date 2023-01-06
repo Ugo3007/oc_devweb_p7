@@ -1,6 +1,9 @@
 import '../../styles/Housing/collapsible.css'
 import React, {useState} from "react";
 
+import arrow_down from '../../assets/arrow_down.png'
+import arrow_up from '../../assets/arrow_up.png'
+
 
 export default function Collapsible ({
                                          collapsibleTitle,
@@ -34,7 +37,15 @@ export default function Collapsible ({
 
     return (
         <div className="collapsible-container">
-            <button type="button" className="collapsible" onClick={handleClick}>{collapsibleTitle}</button>
+            <button type="button" className="collapsible"
+                    onClick={handleClick}>
+                {collapsibleTitle}
+                {classname === 'notDisplayed' ?
+                    <img src={arrow_down} alt="Flèche vers le bas"/> :
+                    <img src={arrow_up} alt="Flèche vers le haut"/>
+                }
+
+            </button>
             {content}
         </div>
 

@@ -56,7 +56,8 @@
     column-gap: 10px;
 }
 
-.collapsible-container > div {
+.housing-details-container .collapsible-container > div {
     height: 250px;
-    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 25px;
 }
