@@ -28,11 +28,11 @@
     display: none;
 }
 
-.blockDisplayed {
+.flexDisplayed {
     padding: 0 18px;
     overflow: hidden;
     background-color: #f1f1f1;
-    display: block;
+    display: flex;
 }
 
 .collapsible-container > div > ul {

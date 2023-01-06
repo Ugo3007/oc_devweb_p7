@@ -6,7 +6,7 @@ export default function Collapsible ({
                                          collapsibleTitle,
                                          collapsibleContent
                                      }) {
-    const [classname, setClassname] = useState('blockDisplayed')
+    const [classname, setClassname] = useState('notDisplayed')
 
     let content
 
@@ -29,7 +29,7 @@ export default function Collapsible ({
     }
 
     const handleClick = () => {
-        classname === 'notDisplayed' ? setClassname('blockDisplayed') : setClassname('notDisplayed')
+        classname === 'notDisplayed' ? setClassname('flexDisplayed') : setClassname('notDisplayed')
     }
 
     return (
