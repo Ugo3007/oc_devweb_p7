@@ -5,21 +5,27 @@ import {useState} from "react";
 
 export default function Carousel ({img}) {
 
-
-    const cards = [
-        {
-            id: 1,
-            image: img[0]
-        },
-        {
-            id: 2,
-            image: img[1]
-        },
-        {
-            id: 3,
-            image: img[2]
-        },
-    ]
+    let cards = []
+    img.forEach((value, index) => {
+        cards.push({
+            id: index + 1,
+            image: value
+        })
+    })
+    // const cards = [
+    //     {
+    //         id: 1,
+    //         image: img[0]
+    //     },
+    //     {
+    //         id: 2,
+    //         image: img[1]
+    //     },
+    //     {
+    //         id: 3,
+    //         image: img[2]
+    //     },
+    // ]
 
     const [slideIndex, setSlideIndex] = useState(0)
 
