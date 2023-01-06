@@ -6,32 +6,33 @@ import Collapsible from "../components/Housing/Collapsible";
 import Carousel from "../components/Carousel";
 
 
-const data = require('../datas/logements.json')
 export default function HousingDetails () {
+    const data = require('../datas/logements.json')
+    const obj = data.find(o => o.id === window.location.pathname.split('/')[2])
     return (
         <div className="housing-details-container">
-            <Carousel img={data[0].pictures}/>
+            <Carousel img={obj.pictures}/>
             <div className="row">
                 <section className="column">
-                    <h2>{data[0].title}</h2>
-                    <p>{data[0].location}</p>
+                    <h2>{obj.title}</h2>
+                    <p>{obj.location}</p>
                 </section>
                 <section className="column">
-                    <Contact src={data[0].host.picture} hostname={data[0].host.name}/>
+                    <Contact src={obj.host.picture} hostname={obj.host.name}/>
                 </section>
             </div>
             <div className="row">
                 <section className="column-row">
-                    <Tag tagname={data[0].tags[0]}/>
-                    <Tag tagname={data[0].tags[1]}/>
+                    <Tag tagname={obj.tags[0]}/>
+                    <Tag tagname={obj.tags[1]}/>
                 </section>
                 <section className="column">
-                    <Rating numberOfStars={data[0].rating}/>
+                    <Rating numberOfStars={obj.rating}/>
                 </section>
             </div>
             <div className="row">
-                <Collapsible collapsibleTitle="Description" collapsibleContent={data[0].description}/>
-                <Collapsible collapsibleTitle="Équipements" collapsibleContent={data[0].equipments}/>
+                <Collapsible collapsibleTitle="Description" collapsibleContent={obj.description}/>
+                <Collapsible collapsibleTitle="Équipements" collapsibleContent={obj.equipments}/>
             </div>
         </div>
     )
