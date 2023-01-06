@@ -55,3 +55,9 @@
     display: flex;
     column-gap: 10px;
 }
+
+.collapsible-container > div {
+    height: 250px;
+    display: flex;
+    align-items: center;
+}
