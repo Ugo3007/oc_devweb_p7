@@ -12,23 +12,20 @@ export default function HousingDetails () {
     return (
         <div className="housing-details-container">
             <Carousel img={obj.pictures}/>
-            <div className="row">
-                <section className="column">
-                    <h2>{obj.title}</h2>
-                    <p>{obj.location}</p>
-                </section>
-                <section className="column">
+
+
+            <div className="row first-row">
+                <div className="column column1">
+                    <div>
+                        <h2>{obj.title}</h2>
+                        <p>{obj.location}</p>
+                    </div>
+                    <Tag tagname={obj.tags}/>
+                </div>
+                <div className="column column2">
                     <Contact src={obj.host.picture} hostname={obj.host.name}/>
-                </section>
-            </div>
-            <div className="row">
-                <section className="column-row">
-                    <Tag tagname={obj.tags[0]}/>
-                    <Tag tagname={obj.tags[1]}/>
-                </section>
-                <section className="column">
                     <Rating numberOfStars={obj.rating}/>
-                </section>
+                </div>
             </div>
             <div className="row">
                 <Collapsible collapsibleTitle="Description" collapsibleContent={obj.description}/>
