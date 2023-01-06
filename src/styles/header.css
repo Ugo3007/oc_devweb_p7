@@ -32,8 +32,44 @@
     text-decoration: underline;
 }
 
+@media screen and (max-width: 780px) {
+    .main-header {
+        padding: 40px 20px;
+    }
+
+    .main-header > img {
+        width: 145px;
+        height: 48px;
+        /* Width mobile device : 145px */
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+    }
+
+    nav > ul {
+        padding: 0;
+        margin: 0;
+    }
+
+    .link {
+        margin-left: 20px;
+        font-size: 15px;
+    }
+}
+
+
 @media screen and (max-width: 375px) {
+    .main-header {
+        max-width: 335px;
+        max-height: 47px;
+        margin: 20px;
+        padding: 0;
+    }
+
     .link {
         text-transform: uppercase;
+        font-size: 12px;
     }
 }
