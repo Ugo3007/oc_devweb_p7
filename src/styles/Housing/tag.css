@@ -1,3 +1,8 @@
+.tag-container {
+    display: flex;
+    gap: 10px;
+}
+
 .tag {
     width: 115px;
     height: 25px;
@@ -8,3 +13,4 @@
     font-size: 14px;
     line-height: 20px;
 }
+
