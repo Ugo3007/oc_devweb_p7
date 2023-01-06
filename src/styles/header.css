@@ -20,7 +20,6 @@
     font-size: 24px;
     color: #FF6060;
     text-decoration: none;
-    text-transform: uppercase;
 }
 
 .link:hover {
@@ -33,3 +32,8 @@
     text-decoration: underline;
 }
 
+@media screen and (max-width: 375px) {
+    .link {
+        text-transform: uppercase;
+    }
+}
