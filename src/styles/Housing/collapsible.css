@@ -18,7 +18,7 @@
     padding-left: 20px;
 }
 
-.active, .collapsible:hover {
+.collapsible:hover {
     background-color: #ff3c3c;
 }
 
