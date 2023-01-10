@@ -7,6 +7,10 @@
     color: #FF6060;
 }
 
+.carousel-container {
+    width: 100%;
+}
+
 .row {
     display: flex;
     justify-content: space-between;
@@ -60,4 +64,16 @@
     height: 250px;
     padding-top: 40px;
     padding-bottom: 25px;
+}
+
+@media screen and (max-width: 1440px) {
+    .housing-details-container {
+        margin: 0 100px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .housing-details-container {
+        margin: 0 10px;
+    }
 }
