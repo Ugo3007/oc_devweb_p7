@@ -53,6 +53,7 @@
 
 .collapsible-container > div > p {
     line-height: 25px;
+    margin-top: 25px;
 }
 
 .collapsible > img {
