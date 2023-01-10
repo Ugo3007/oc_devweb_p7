@@ -1,8 +1,8 @@
 .gallery-container {
-    padding: 56px 0 40px 0;
+    padding: 56px 50px 40px 50px;
     background-color: #F7F7F7;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-wrap: wrap;
     border-radius: 25px;
 }
