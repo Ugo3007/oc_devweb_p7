@@ -6,7 +6,24 @@
     align-items: center;
 }
 
+.about-container > div {
+    width: 100%;
+}
+
 .about-container > div > .collapsible-container {
-    margin: 20px;
-    width: 1240px;
+    width: 100%;
+    margin: 20px 0;
+}
+
+
+@media screen and (max-width: 1440px) {
+    .about-container {
+        margin: 0 100px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .about-container {
+        margin: 0 10px;
+    }
 }
