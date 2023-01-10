@@ -26,4 +26,8 @@
     .about-container {
         margin: 0 10px;
     }
+
+    .about-container .collapsible-container p {
+        font-size: 14px;
+    }
 }
