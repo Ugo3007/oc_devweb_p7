@@ -28,6 +28,7 @@
 }
 
 .prev, .next {
+    opacity: 0.5;
     border: none;
     cursor: pointer;
     position: absolute;
@@ -49,6 +50,7 @@
 
 .prev:hover, .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
+    opacity: 1;
 }
 
 .false {
