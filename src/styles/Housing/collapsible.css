@@ -36,6 +36,11 @@
     display: flex;
 }
 
+.collapsible-container > div {
+    border-radius: 10px;
+    margin-top: -10px;
+}
+
 .collapsible-container > div > ul {
     padding-left: 0;
 }
