@@ -1,3 +1,4 @@
+
 .error_page {
     width: 100%;
 }
@@ -7,6 +8,7 @@
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
     color: #FF6060;
 }
@@ -23,6 +25,67 @@
 }
 
 .main-container > p:nth-of-type(2) {
-    margin-top: 150px;
+    margin-top: 100px;
+}
+
+.main-container .linkError {
     font-size: 18px;
+    color: #FF6060;
+    text-decoration: underline;
+}
+
+.main-container .linkError:hover {
+    color: #FF6060;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+    .main-container {
+        margin: 0 50px;
+    }
+
+    .main-container > img {
+        box-sizing: border-box;
+        max-width: 600px;
+        width: 100%;
+        margin: 50px 100px 0;
+    }
+
+    .main-container > p:first-of-type {
+        text-align: center;
+    }
+
+    .main-container > p:last-of-type {
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .main-container > p:first-of-type {
+        font-size: 30px;
+    }
+
+    .main-container .linkError {
+        font-size: 14px;
+    }
+}
+
+
+@media screen and (max-width: 375px) {
+    .main-container {
+        height: 65vh;
+    }
+    
+    .main-container > img {
+        width: 200px;
+        height: 100px;
+    }
+
+    .main-container > p:first-of-type {
+        width: 260px;
+        font-size: 18px;
+        text-align: center;
+        line-height: 25px;
+    }
 }
