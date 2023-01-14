@@ -13,12 +13,12 @@ export default function Gallery () {
     }
 
     return (
-        <div className="gallery-container">
+        <section className="gallery-container">
             {
                 data.map((value) => {
                     return renderCard(value.id, value.title, value.cover, value.description)
                 })
             }
-        </div>
+        </section>
     )
 }

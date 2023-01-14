@@ -39,7 +39,7 @@ export default function Carousel ({img}) {
         else setSlideIndex(slideIndex - 1)
     }
 
-    let buttonClassNames = cards.length === 1 ? 'false ' : 'true '
+    let buttonClassNames = cards.length === 1 ? 'visibilityHidden ' : 'visibilityShown '
 
     return (
         <div className='carousel-container'>
@@ -50,7 +50,7 @@ export default function Carousel ({img}) {
                 return (
                     <div key={item.id} className={className}>
                         <img src={item.image} alt={item.id}/>
-                        <div className='text'>{item.id}/{cards.length}</div>
+                        <div className={buttonClassNames + 'text'}>{item.id}/{cards.length}</div>
                     </div>
                 )
             })}

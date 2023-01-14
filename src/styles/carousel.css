@@ -53,11 +53,11 @@
     opacity: 1;
 }
 
-.false {
+.visibilityHidden {
     visibility: hidden;
 }
 
-.true {
+.visibilityShown {
     visibility: visible;
 }
 

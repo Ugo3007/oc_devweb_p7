@@ -71,15 +71,17 @@
     }
 }
 
+@media screen and (max-width: 400px) {
+    .main-container > img {
+        width: 200px;
+        height: 100px;
+    }
+}
+
 
 @media screen and (max-width: 375px) {
     .main-container {
         height: 65vh;
-    }
-    
-    .main-container > img {
-        width: 200px;
-        height: 100px;
     }
 
     .main-container > p:first-of-type {
