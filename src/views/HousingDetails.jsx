@@ -4,12 +4,12 @@ import Tag from "../components/Housing/Tag";
 import Rating from "../components/Housing/Rating";
 import Collapsible from "../components/Housing/Collapsible";
 import Carousel from "../components/Carousel";
+import {Navigate} from "react-router-dom";
 
 export default function HousingDetails () {
     const data = require('../datas/logements.json')
     const obj = data.find(o => o.id === window.location.pathname.split('/')[2])
     if (obj !== undefined) {
-        console.log(obj)
         return (
             <div className="housing-details-container">
                 <Carousel img={obj.pictures}/>
@@ -34,6 +34,6 @@ export default function HousingDetails () {
         )
 
     } else {
-        // return <Navigate to="/error-page" replace/>
+        return <Navigate to="/error-page" replace/>
     }
 }
