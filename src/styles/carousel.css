@@ -28,16 +28,17 @@
 }
 
 .prev, .next {
+    background-color: transparent;
     opacity: 0.5;
     border: none;
     cursor: pointer;
     position: absolute;
-    top: 50%;
+    top: 45%;
     margin-top: -22px;
     padding: 16px;
     color: white;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 46px;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
@@ -49,7 +50,7 @@
 }
 
 .prev:hover, .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+    color: black;
     opacity: 1;
 }
 
@@ -88,5 +89,9 @@
 @media screen and (max-width: 500px) {
     .carousel-container {
         height: 255px;
+    }
+
+    .prev, .next {
+        font-size: 24px;
     }
 }
