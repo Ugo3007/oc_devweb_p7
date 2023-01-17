@@ -189,10 +189,19 @@
     }
 
     .housing-details-container .collapsible-container > div {
-        height: 165px;
         padding-top: 20px;
-        padding-bottom: 0;
         font-size: 12px;
+        line-height: 17px;
+
+        /* Si taille non fixée*/
+        height: fit-content;
+        padding-bottom: 20px;
+
+        /*
+        Sinon
+        height: 165px;
+        padding-bottom: 0;
+        */
     }
 
     .housing-details-container .collapsible-container > div > p {
