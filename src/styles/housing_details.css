@@ -75,11 +75,20 @@
 
     .housing-details-container .collapsible-container > div {
         height: 300px;
-        font-size: 14px;
+        font-size: 18px;
+        line-height: 25px;
     }
 
     .housing-details-container .collapsible-container > div > p {
         margin: 0;
+    }
+
+    .housing-details-container .collapsible-container ul {
+        margin-top: 0;
+    }
+
+    .housing-details-container .collapsible-container li {
+        padding-bottom: 0;
     }
 }
 
@@ -135,5 +144,66 @@
     .rating > .star {
         width: 20px;
         height: 20px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .first-row {
+        margin-top: 15px;
+    }
+
+    .first-row > .column1 > div:first-of-type {
+        margin-top: 0;
+    }
+
+    .column2 {
+        height: 33px;
+        padding: 0;
+    }
+
+    .column2 .contact {
+        height: 100%;
+    }
+
+    .column2 .contact > p {
+        margin: 0;
+        font-size: 12px;
+        line-height: 17px;
+        width: 90px;
+        padding-left: 10px;
+    }
+
+    .column2 .thumb {
+        height: 32px;
+        width: 32px;
+        margin-left: 11px;
+    }
+
+    .housing-details-container .row:last-of-type {
+        margin-top: 16px;
+    }
+
+    .collapsible-container > .collapsible {
+        height: 30px;
+        font-size: 13px;
+    }
+
+    .housing-details-container .collapsible-container > div {
+        height: 165px;
+        padding-top: 20px;
+        padding-bottom: 0;
+        font-size: 12px;
+    }
+
+    .housing-details-container .collapsible-container > div > p {
+        line-height: 17px;
+    }
+
+    .housing-details-container .collapsible-container > div > ul {
+        margin: 5px 0 0;
+    }
+
+    .housing-details-container .collapsible-container > div > ul > li {
+        padding-bottom: 0;
     }
 }
