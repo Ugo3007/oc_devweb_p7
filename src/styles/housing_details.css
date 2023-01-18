@@ -70,7 +70,7 @@
 
 @media screen and (max-width: 1440px) {
     .housing-details-container {
-        margin: 0 50px;
+        margin: 0 100px;
     }
 
     .housing-details-container .collapsible-container > div {
@@ -89,6 +89,12 @@
 
     .housing-details-container .collapsible-container li {
         padding-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 1340px) {
+    .housing-details-container {
+        margin: 0 50px;
     }
 }
 
